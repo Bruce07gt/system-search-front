@@ -1,0 +1,18 @@
+<form class="form mat-elevation-z8">
+
+  <h1>Editando o Software</h1>
+
+  <mat-form-field class="full-width">
+      <mat-label>Descricao</mat-label>
+      <input [(ngModel)]="system.descricao" required name="descricao" maxlength="30" matInput placeholder="Ex. Windows xp">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+      <mat-label>sigla</mat-label>
+      <input [(ngModel)]="system.sigla" required name="sigla" maxlength="10" matInput placeholder="W xp">
+  </mat-form-field>
+
+  <button class="mat-elevation-z8" (click)="update()"  mat-stroked-button color="accent">Editar</button>
+  <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+</form>
+

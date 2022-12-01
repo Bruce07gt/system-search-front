@@ -1,0 +1,15 @@
+<form class="form mat-elevation-z8">
+  <h1>Deletando Softaware</h1>
+  <mat-form-field class="full-width">
+      <mat-label>Descricao</mat-label>
+      <input [(ngModel)]="system.descricao" name="nome" disabled maxlength="60" matInput placeholder="Ex. Windows xp">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+      <mat-label>Sigla</mat-label>
+      <input [(ngModel)]="system.sigla" name="sigla" disabled maxlength="15" matInput placeholder="W xp">
+  </mat-form-field>
+
+  <button class="mat-elevation-z8" (click)="delete()" mat-stroked-button color="accent">DELETAR</button>
+  <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+</form>
