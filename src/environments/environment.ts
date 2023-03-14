@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://os-services.herokuapp.com'
+  baseUrl: 'https://system-search-production.up.railway.app/'
 };
 
 /*
